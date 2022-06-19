@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player 2.0</title>
+
+    <!-- Costom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Online CSS file link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Offline Favicon link -->
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="music-card">
+            <div class="image">
+                <img id="image">
+            </div>
+            <h2 id="songName">Song Name</h2>
+            <h3>Sidhu Mose Wala</h3>
+            <audio controls id="music"></audio>
+            <div class="controllers">
+                <div class="timers">
+                    <span id="musicCurrentTime">0:00</span>
+                    <span id="musicDuration">0:00</span>
+                </div>
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="btns">
+                    <div id="songCounter" class="volume-btn">
+                        <span>1</span>
+                        <span>/</span>
+                        <span>14</span>
+                    </div>
+                    <div  class="play-btns">
+                        <i class="fa-solid fa-backward" id="prevBtn" title="Pervious Song"></i>
+                        <span>
+                            <i class="fas fa-play" id="playBtn" title="Play"></i>
+                        </span>
+                        <i class="fa-solid fa-forward" id="nextBtn" title="Next Song"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script Src   -->
+    <script src="script.js "></script>
+</body>
+
+</html>

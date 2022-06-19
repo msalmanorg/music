@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(249, 220, 220);
+}
+
+.container {
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 7px 10px 5px rgba(125, 113, 113, 0.5);
+}
+
+.music-card {
+    position: relative;
+    top: -50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+audio{
+    position: absolute;
+    top: -1000px;
+}
+.image {
+    width: 80%;
+    /* overflow: hidden; */
+}
+
+.image img {
+    border-radius: 10px;
+    box-shadow: 0 7px 10px 5px rgba(125, 113, 113, 0.5);
+    width: 100%;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    color: rgb(60, 58, 58);
+}
+
+h3 {
+    /* margin-top: 1px; */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.controllers {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.timers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: rgb(212, 205, 205);
+    margin: 5px 0;
+    height: 4px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-container:hover {
+    filter: brightness(95%);
+    transform: scaleY(1.3);
+}
+
+.progress-bar {
+    transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    background-color: rgb(41, 36, 36);
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+}
+
+.btns {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.play-btns {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    /* background-color: red; */
+}
+
+.play-btns i {
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.play-btns span {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.play-btns span i {
+    font-size: 35px;
+    position: absolute;
+    top: -4px;
+}
+
+.volume-btn {
+    width: 38%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+.volume-btn span:nth-child(2) {
+    margin: 0 3px;
+}
+
+
+i {
+    color: rgb(103, 98, 98);
+}
+
+i:hover {
+    color: rgb(77, 75, 75);
+}
